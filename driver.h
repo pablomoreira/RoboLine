@@ -12,10 +12,11 @@ class Driver{
   public:
     Driver();
     void Attach(Motor* d,Motor* i);
+    
     ~Driver();
     
     void Direction(int accion);
-    void Run();
+    void Run(int _bool);
    private:
      int _tiempo;
      int _now;
