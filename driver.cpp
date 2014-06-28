@@ -43,7 +43,8 @@ void Driver::Direction(int _direction)
       this->_i->Vel(0);
   }
 }
-void Driver::Run()
+void Driver::Run(int _bool)
 {
-  
+      this->_d->Act(_bool);
+      this->_i->Act(_bool);
 }

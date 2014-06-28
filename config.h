@@ -7,4 +7,4 @@
 
 #define LineaI 8
 #define LineaD 9
-
+#define SW 4

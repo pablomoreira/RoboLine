@@ -1,18 +1,19 @@
 #include "config.h"
 #include "motor.h"
 #include "driver.h"
+#include "digitalin.h"
 
 #include <Servo.h>
 
 Motor mySmD;
 Motor mySmI;
 Driver mydriver;
-
+Digitalin sw;
 
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
-  
+  sw = Digitalin(SW);
   mySmD.Begin(SMotD,1);
   mySmI.Begin(SMotI,0);
   
@@ -73,6 +74,7 @@ void loop() {
       Serial.print(" I-> ");
       Serial.println(tmpI);
     }
+    if
     
 }
 
@@ -95,7 +97,7 @@ boolean Init(unsigned long* t,int* count,int limit,int* state)
 {
      boolean ret = true;
      
-     if(millis() -*t > 100)
+     if(millis() -*t > 50)
      {
        *t = millis();
        *state= ~(*state);
