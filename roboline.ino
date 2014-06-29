@@ -74,7 +74,11 @@ void loop() {
       Serial.print(" I-> ");
       Serial.println(tmpI);
     }
-    if
+    if(sw.getState())
+    {
+        mydriver.Direction(STOP);
+        mydrive.Run(0);
+    }
     
 }
 
