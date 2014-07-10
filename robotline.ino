@@ -10,10 +10,13 @@ Motor mySmI;
 Driver mydriver;
 Digitalin sw;
 
+int A0Max;
+int A1Max;
+
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
-  sw = Digitalin(SW);
+  sw.setPort(SW);
   mySmD.Begin(SMotD,1);
   mySmI.Begin(SMotI,0);
   
@@ -27,10 +30,13 @@ void setup() {
   unsigned long vart = millis();   
   int count = 0,state = LOW;
   
+  A0Max = Calibrar(A0,LineaD);
+  A1Max = Calibrar(A1,LineaI);
+  Serial.print("A0Max-> ");
+  Serial.print(A0Max);
+  Serial.print(" A1Max-> ");
+  Serial.println(A1Max); 
   while(Init(&vart,&count,50,&state));
-  
-  
-  
 }
 
 unsigned long pretime = 0,now;
@@ -39,30 +45,40 @@ void loop() {
     int tmpD,tmpI;
     boolean b0,b1;
     
-    b0 = Touch(A0,LineaD,550,&tmpD);
-    b1 = Touch(A1,LineaI,620,&tmpI);
+     
     
-    if(b0 == true){
-       digitalWrite(LedD,HIGH);
-       mydriver.Direction(RIGHT);
-    }
-    else  
-        digitalWrite(LedD,LOW);
-       
-    if(b1 == true){
-      digitalWrite(LedI,HIGH);
-      mydriver.Direction(LEFT);
-    } else  digitalWrite(LedI,LOW);
+    b0 = Touch(A0,LineaD,A0Max - 200,&tmpD);
+    b1 = Touch(A1,LineaI,A1Max - 200,&tmpI);
     
-    if(b1 == false  && b0 == false)
+    if(b0 == false && b1 == false)
     {
          mydriver.Direction(FORWARD);
-    } 
-    if(b1 == true  && b0 == true)
-    {
-         mydriver.Direction(STOP);
+         digitalWrite(LedI,LOW);
+         digitalWrite(LedD,LOW);  
     }
-    
+    else
+    {  
+        if(b0 == true && b1 == true)
+        {
+            mydriver.Direction(STOP);
+            digitalWrite(LedI,HIGH);
+            digitalWrite(LedD,HIGH);
+        }
+        else
+        {
+          if(b0 == true)
+          {
+               mydriver.Direction(RIGHT); 
+               digitalWrite(LedD,HIGH);
+          }
+          else
+          {
+             if(b1 == true)mydriver.Direction(LEFT);
+             digitalWrite(LedI,HIGH);
+          }
+        }
+       
+    }
     
     now = millis();
     if(now - pretime > 150){
@@ -74,10 +90,11 @@ void loop() {
       Serial.print(" I-> ");
       Serial.println(tmpI);
     }
+    
     if(sw.getState())
     {
         mydriver.Direction(STOP);
-        mydrive.Run(0);
+        mydriver.Run(0);
     }
     
 }
@@ -109,7 +126,17 @@ boolean Init(unsigned long* t,int* count,int limit,int* state)
        (*count)++;
        if(*count >= limit) ret = false;
        Serial.println(*count);
+        A0Max = analogRead(A0);
+        A1Max = analogRead(A1);
      }
      
      return ret;
+}
+
+int Calibrar(int An, int Led)
+{          
+    digitalWrite(Led,HIGH);
+    delay(1);
+    return  analogRead(An);
+     
 }
