@@ -30,25 +30,27 @@ void setup() {
   unsigned long vart = millis();   
   int count = 0,state = LOW;
   
-  A0Max = Calibrar(A0,LineaD);
-  A1Max = Calibrar(A1,LineaI);
+  while(Init(&vart,&count,10,&state));
+  delay(2000);
+  A0Max = Calibrar(A0,LineaD) - 200;
+  A1Max = Calibrar(A1,LineaI) - 200;
   Serial.print("A0Max-> ");
   Serial.print(A0Max);
   Serial.print(" A1Max-> ");
-  Serial.println(A1Max); 
-  while(Init(&vart,&count,50,&state));
+  Serial.println(A1Max);
+  while(Init(&vart,&count,40,&state));
+  
 }
 
 unsigned long pretime = 0,now;
 void loop() {
     
     int tmpD,tmpI;
-    boolean b0,b1;
+    boolean b0,b1; 
     
-     
+    b0 = Touch(A0,LineaD,A0Max,&tmpD);
+    b1 = Touch(A1,LineaI,A1Max,&tmpI);
     
-    b0 = Touch(A0,LineaD,A0Max - 200,&tmpD);
-    b1 = Touch(A1,LineaI,A1Max - 200,&tmpI);
     
     if(b0 == false && b1 == false)
     {
@@ -70,25 +72,30 @@ void loop() {
           {
                mydriver.Direction(RIGHT); 
                digitalWrite(LedD,HIGH);
+               digitalWrite(LedI,LOW);
           }
           else
           {
              if(b1 == true)mydriver.Direction(LEFT);
              digitalWrite(LedI,HIGH);
+             digitalWrite(LedD,LOW);
           }
         }
        
     }
     
     now = millis();
-    if(now - pretime > 150){
+    if(now - pretime > 250){
       pretime = millis();
       
       Serial.print(" D-> ");
       Serial.print(tmpD);
-      
+      Serial.print(" L-> ");
+      Serial.print(b0);
       Serial.print(" I-> ");
-      Serial.println(tmpI);
+      Serial.print(tmpI);
+      Serial.print(" L-> ");
+      Serial.println(b1);
     }
     
     if(sw.getState())
@@ -126,8 +133,7 @@ boolean Init(unsigned long* t,int* count,int limit,int* state)
        (*count)++;
        if(*count >= limit) ret = false;
        Serial.println(*count);
-        A0Max = analogRead(A0);
-        A1Max = analogRead(A1);
+       
      }
      
      return ret;
