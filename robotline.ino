@@ -135,8 +135,11 @@ boolean Init(unsigned long* t,int* count,int limit,int* state)
 
 int Calibrar(int An, int Led)
 {          
+    int val;
     digitalWrite(Led,HIGH);
     delay(1);
-    return  analogRead(An);
+    val = analogRead(An);
+    digitalWrite(Led,LOW);    
+    return  val;
      
 }
