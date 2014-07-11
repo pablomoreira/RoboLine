@@ -31,8 +31,11 @@ Cuando un sensor detecta la linea los motores deben corregir el rumbo aumentando
 
 Fenómeno Físico
 ---------------
-La luz infrarroja, como así la visible, puede ser reflejada, absorbida o refractada. Las superficies blancas son capaces de reflejar mas luz que las oscuras o negra.
+La luz infrarroja, como así la visible, puede ser reflejada, absorbida o refractada. Las superficies blancas son capaces de reflejar mas luz que las oscuras o negras.
+
 El sensor infrarrojo utiliza este fenómeno para determinar la ubicación de la linea negra sobre la superficie blanca. Utiliza un led que emite luz infrarroja y un foto diodo capaz de detectarla. 
+
+
 Los controles remotos de los electrodomésticos utilizan el mismo método para su funcionamiento.  
 
 
