@@ -15,10 +15,10 @@ El robot en la parte frontal tiene 2 sensores CNY70 que permiten detectar la int
 Marcando una linea negra sobre una superficie oscura y colocando dos sensores frontales a ambos lados de esta se puede diseñar un mecanismo o robot capaz de seguir un circuito.
 
 La siguiente imagen ejemplifica el funcionamiento del sensor.
+-------------------------------------------------------------
+En la imagen 1 el rebote de la luz infrarroja es mayor que en la imagen 2 debido al color de la superficie. 
 
 ![Imagen][sen]
-
-En la imagen uno el rebote de la luz infrarroja es mayor que en la imagen 2. 
 
 Si ambos sensores están sobre una superficie blanca el robot seguirá derecho.
 
@@ -39,7 +39,7 @@ Agradecimientos:
 Vídeo demostración.
 -------------------
  
-[![RobotLine Video demostracion](http://img.youtube.com/vi/SeZ32AWF-9Q/0.jpg)](http://www.youtube.com/watch?v=SeZ32AWF-9Q)
+<center>[![RobotLine Video demostracion](http://img.youtube.com/vi/SeZ32AWF-9Q/0.jpg)](http://www.youtube.com/watch?v=SeZ32AWF-9Q)</center> 
 
 [sen]: https://raw.githubusercontent.com/pablomoreira/RoboLine/master/img/ex2.png "Sensor"
 [seg]: https://raw.githubusercontent.com/pablomoreira/RoboLine/master/img/ex0.png "Seguir"
