@@ -14,7 +14,7 @@ Funcionamiento
 El robot en la parte frontal tiene 2 sensores CNY70 que permiten detectar la intensidad de la luz infrarroja, cuando la superficie es blanca el reflejo es mayor, cuando la superficie es opaca o negra la cantidad de luz infrarroja recibida es menor.
 Marcando una linea negra sobre una superficie oscura y colocando dos sensores frontales a ambos lados de esta se puede diseñar un mecanismo o robot capaz de seguir un circuito.
 
-La siguiente imagen ejemplifica el funcionamiento del sensor.
+Funcionamiento del sensor.
 -------------------------------------------------------------
 En la imagen 1 el rebote de la luz infrarroja es mayor que en la imagen 2 debido al color de la superficie. 
 
@@ -39,7 +39,7 @@ Agradecimientos:
 Vídeo demostración.
 -------------------
  
-<center>[![RobotLine Video demostracion](http://img.youtube.com/vi/SeZ32AWF-9Q/0.jpg)](http://www.youtube.com/watch?v=SeZ32AWF-9Q)</center> 
+[![RobotLine Video demostracion](http://img.youtube.com/vi/SeZ32AWF-9Q/0.jpg)](http://www.youtube.com/watch?v=SeZ32AWF-9Q)
 
 [sen]: https://raw.githubusercontent.com/pablomoreira/RoboLine/master/img/ex2.png "Sensor"
 [seg]: https://raw.githubusercontent.com/pablomoreira/RoboLine/master/img/ex0.png "Seguir"
