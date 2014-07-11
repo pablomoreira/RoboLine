@@ -43,8 +43,7 @@ El sensor infrarrojo utiliza este fenómeno para determinar la ubicación de la 
 Los controles remotos de los electrodomésticos utilizan el mismo método para su funcionamiento.  
 
 
-   
-Agradecimientos:
+Agradecimientos
 ----------------
 * Ing. Mario Chury.
 * Ing. Carlos Blanc.
