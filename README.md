@@ -7,7 +7,7 @@ Line follower robot with Arduino. The line is marked in white board using a blac
 ![Imagen][id]
 
 Introducción
----------------
+-------------
 
 El robot fue desarrollado por el grupo de robótica de la Facultad Regional Concordia de UTN para el Museo Interactivo de Ciencia de La CAFEGS Concordia.
 Está Construido con 2 servomotores trucados, 2 CNY70 y  una placa clon de un Arduino UNO.
@@ -15,15 +15,15 @@ Está Construido con 2 servomotores trucados, 2 CNY70 y  una placa clon de un Ar
 En la parte frontal tiene 2 sensores CNY70 que permiten detectar la intensidad de la luz infrarroja, cuando la superficie es blanca el reflejo es mayor, cuando la superficie es opaca o negra la cantidad de luz infrarroja recibida es menor.
 Marcando una linea negra sobre una superficie oscura y colocando dos sensores frontales a ambos lados de esta se puede diseñar un mecanismo o robot capaz de seguir un circuito.
 
-Sensor infrarrojo.
--------------------
+Sensor infrarrojo
+-----------------
 
 En la imagen 1 el rebote de la luz infrarroja es mayor que en la imagen 2 debido al color de la superficie. 
 
 ![Imagen][sen]
 
 Funcionamiento
----------------
+--------------
 Si ambos sensores están sobre una superficie blanca el robot seguirá derecho.
 
 ![Imagen][seg]  
@@ -44,7 +44,7 @@ Los controles remotos de los electrodomésticos utilizan el mismo método para s
 
 
 Agradecimientos
-----------------
+---------------
 * Ing. Mario Chury.
 * Ing. Carlos Blanc.
 * Ing. Jorge Penco.
@@ -52,8 +52,8 @@ Agradecimientos
 
 
 
-Vídeo demostración.
--------------------
+Vídeo demostración
+------------------
  
 [![RobotLine Video demostracion](http://img.youtube.com/vi/SeZ32AWF-9Q/0.jpg)](http://www.youtube.com/watch?v=SeZ32AWF-9Q)
 
