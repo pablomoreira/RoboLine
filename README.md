@@ -7,8 +7,8 @@ Line follower robot with Arduino. The line is marked in white board using a blac
 ![Imagen][id]
 
 Introducción
-
 ---------------
+
 El robot fue desarrollado por el grupo de robótica de la Facultad Regional Concordia de UTN para el Museo Interactivo de Ciencia de La CAFEGS Concordia.
 Está Construido con 2 servomotores trucados, 2 CNY70 y  una placa clon de un Arduino UNO.
 
