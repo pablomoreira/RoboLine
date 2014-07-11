@@ -16,7 +16,7 @@ Marcando una linea negra sobre una superficie oscura y colocando dos sensores fr
 
 La siguiente imagen ejemplifica el funcionamiento del sensor
 
-|[Imagen][sen]
+![Imagen][sen]
 
 Si ambos sensores están sobre una superficie blanca el robot seguirá derecho.
 
