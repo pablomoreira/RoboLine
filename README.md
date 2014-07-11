@@ -20,10 +20,10 @@ Sensor infrarrojo.
 
 En la imagen 1 el rebote de la luz infrarroja es mayor que en la imagen 2 debido al color de la superficie. 
 
-Funcionamiento
----------------
 ![Imagen][sen]
 
+Funcionamiento
+---------------
 Si ambos sensores están sobre una superficie blanca el robot seguirá derecho.
 
 ![Imagen][seg]  
