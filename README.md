@@ -24,7 +24,7 @@ Si ambos sensores están sobre una superficie blanca el robot seguirá derecho.
 
 ![Imagen][seg]  
 
-Cuando un sensor detecta la linea los meteros deben corregir el rumbo aumentando la velocidad del motor contrario o disminuyendo la velocidad del motor relacionado al que detectó el cambio de contraste de la superficie.
+Cuando un sensor detecta la linea los motores deben corregir el rumbo aumentando la velocidad del motor contrario o disminuyendo la velocidad del motor relacionado al sensor que detectó el cambio de contraste en superficie.
 
 ![Imagen][dob]  
    
@@ -36,7 +36,8 @@ Agradecimientos:
 * Matias Vallejos.
 
 
-El siguiente vídeo es una demostración de su funcionamiento.
+Vídeo demostración.
+-------------------
  
 [![RobotLine Video demostracion](http://img.youtube.com/vi/SeZ32AWF-9Q/0.jpg)](http://www.youtube.com/watch?v=SeZ32AWF-9Q)
 
