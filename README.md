@@ -13,7 +13,7 @@ El robot fue desarrollado por el grupo de robótica de la Facultad Regional Conc
 Está Construido con 2 servomotores trucados, 2 CNY70 y  una placa clon de un Arduino UNO.
 
 En la parte frontal tiene 2 sensores CNY70 que permiten detectar la intensidad de la luz infrarroja, cuando la superficie es blanca el reflejo es mayor, cuando la superficie es opaca o negra la cantidad de luz infrarroja recibida es menor.
-Marcando una linea negra sobre una superficie oscura y colocando dos sensores frontales a ambos lados de esta se puede diseñar un mecanismo o robot capaz de seguir un circuito.
+Marcando una linea negra sobre una superficie blanca y colocando dos sensores frontales a ambos lados de este se puede diseñar un mecanismo o robot capaz de seguir un circuito.
 
 Sensor infrarrojo
 -----------------
@@ -40,7 +40,7 @@ La luz infrarroja, como así la visible, puede ser reflejada, absorbida o refrac
 El sensor infrarrojo utiliza este fenómeno para determinar la ubicación de la linea negra sobre la superficie blanca. Utiliza un led que emite luz infrarroja y un foto diodo capaz de detectarla. 
 
 
-Los controles remotos de los electrodomésticos utilizan el mismo método para su funcionamiento.  
+EL fenómeno se aplica en los controles remotos de los electrodomésticos.  
 
 
 Agradecimientos
