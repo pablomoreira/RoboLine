@@ -11,7 +11,7 @@ Introducción
 
 El robot fue desarrollado por el grupo de robótica de la Facultad Regional Concordia de la Universidad Tecnológica Nacional para el Museo Interactivo de Ciencia (MIC) de la CAFEGS Concordia. Está Construido con 2 servomotores trucados, es decir se le ha posibilitado girar en ambos sentidos indefinidamente (los servomotores standard solo pueden recorrer un arco que no supera los 210º dependiendo del fabricante).
 Consta también de dos sensores de reflexión CNY70 que incorpora internamente un emisor de luz infrarroja y de su respectivo receptor y como sistema de control  una placa clon de un microcontrolador Arduino UNO.
-En la parte frontal se ubican los dos  sensores CNY70 que permiten detectar la intensidad de la luz infrarroja que se refleja  de la superficie (siendo esta mayor  cuando la superficie es blanca y caso contrario cuando la superficie es  opaca o negra) . Utilizando un marcador negro de pizarra se puede dibujar un camino para que el vehículo sea capaz de seguir por medio de los sensores de reflexión y un programa de control adecuado almacenado previamente en el Arduino Uno.
+En la parte frontal se ubican los dos  sensores CNY70 que permiten detectar la intensidad de la luz infrarroja que se refleja  de la superficie (siendo esta mayor  cuando la superficie es blanca y caso contrario cuando la superficie es  opaca o negra) . Utilizando un marcador negro de pizarra se puede dibujar un camino para que el vehículo lo siga por medio de los sensores de reflexión y un programa de control adecuado almacenado previamente en el Arduino Uno.
 
 
 Sensor infrarrojo
