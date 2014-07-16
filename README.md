@@ -9,11 +9,10 @@ Line follower robot with Arduino. The line is marked in white board using a blac
 Introducción
 -------------
 
-El robot fue desarrollado por el grupo de robótica de la Facultad Regional Concordia de UTN para el Museo Interactivo de Ciencia de La CAFEGS Concordia.
-Está Construido con 2 servomotores trucados, 2 CNY70 y  una placa clon de un Arduino UNO.
+El robot fue desarrollado por el grupo de robótica de la Facultad Regional Concordia de la Universidad Tecnológica Nacional para el Museo Interactivo de Ciencia (MIC) de la CAFEGS Concordia. Está Construido con 2 servomotores trucados, es decir se le ha posibilitado girar en ambos sentidos indefinidamente (los servomotores standard solo pueden recorrer un arco que no supera los 210º dependiendo del fabricante).
+Consta también de dos sensores de reflexión CNY70 que incorpora internamente un emisor de luz infrarroja y de su respectivo receptor y como sistema de control  una placa clon de un microcontrolador Arduino UNO.
+En la parte frontal se ubican los dos  sensores CNY70 que permiten detectar la intensidad de la luz infrarroja que se refleja  de la superficie (siendo esta mayor  cuando la superficie es blanca y caso contrario cuando la superficie es  opaca o negra) . Utilizando un marcador negro de pizarra se puede dibujar un camino para que el vehículo sea capaz de seguir por medio de los sensores de reflexión y un programa de control adecuado almacenado previamente en el Arduino Uno.
 
-En la parte frontal tiene 2 sensores CNY70 que permiten detectar la intensidad de la luz infrarroja, cuando la superficie es blanca el reflejo es mayor, cuando la superficie es opaca o negra la cantidad de luz infrarroja recibida es menor.
-Marcando una linea negra sobre una superficie blanca y colocando dos sensores frontales a ambos lados de este se puede diseñar un mecanismo o robot capaz de seguir un circuito.
 
 Sensor infrarrojo
 -----------------
