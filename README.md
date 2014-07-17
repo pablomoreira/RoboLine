@@ -36,7 +36,7 @@ Fenómeno Físico
 
 La luz infrarroja, como así la visible, puede ser reflejada, absorbida o refractada. Las superficies blancas son capaces de reflejar mas luz que las oscuras o negras.
 
-El sensor infrarrojo utiliza este fenómeno para determinar la ubicación de la linea negra sobre la superficie blanca. Utiliza un led que emite luz infrarroja y un foto diodo capaz de detectarla. 
+El sensor infrarrojo utiliza este fenómeno para determinar la ubicación de la linea negra sobre la superficie blanca. Utiliza un led que emite luz infrarroja y un fototransistor capaz de detectarla. 
 
 
 EL fenómeno se aplica en los controles remotos de los electrodomésticos que utilizan la luz infrarroja para enviar y recibir información.
