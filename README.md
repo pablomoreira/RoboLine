@@ -56,9 +56,14 @@ Vídeo demostración
  
 [![RobotLine Video demostracion](http://img.youtube.com/vi/SeZ32AWF-9Q/0.jpg)](http://www.youtube.com/watch?v=SeZ32AWF-9Q)
 
+Foto en el museo
+-----------------
+![Imagen][ex3]
+
 Autor: Pablo Moreira <pablolokekieran@gmail.com>
 
 [sen]: https://raw.githubusercontent.com/pablomoreira/RoboLine/master/img/ex2.png "Sensor"
 [seg]: https://raw.githubusercontent.com/pablomoreira/RoboLine/master/img/ex0.png "Seguir"
 [dob]: https://raw.githubusercontent.com/pablomoreira/RoboLine/master/img/ex1.png "Doblar"
 [id]: https://raw.githubusercontent.com/pablomoreira/RoboLine/master/img/roboline.jpg " "
+[ex3]: https://raw.githubusercontent.com/pablomoreira/RoboLine/master/img/ex3.jpg " "
